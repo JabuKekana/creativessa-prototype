@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatives SA - Home</title>
+    <link rel="stylesheet" href="DressUpHub.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+
+
+<div class="dressUpHub">
+
+
+  <!-- SHOP NAVBAR STARTS -->
+  <div class="shop-navbar">
+    <span class="shop-navbar-logo">MyStore</span>
+    <div class="shop-navbar-right">
+        <span><a href="">Contact</a></span>
+        <span class="cart-icon" onclick="openCartModal()">&#128722;
+            <span id="cartCount"></span>
+        </span>
+    </div>
+</div>
+
+
+
+ <!-- SHOP NAV BAR ENDS  -->
+
+
+
+
+ <!-- SHOP HEADER ENDS  -->
+
+
+
+<div class="Shop-Header section-padding" id="home">
+    <div class="Shop-Header-content">
+      <h1 class="gradient__text">DRESS UP HUB</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nobis magnam iste aliquam, ipsum non, ab, quasi eos aspernatur ut asperiores assumenda? Impedit dolorem, asperiores quisquam neque minus dolorum nihil eveniet quia corrupti sapiente accusamus aliquid culpa quas, facilis obcaecati.</p>
+    </div>
+
+    <div class="Shop-Header-image">
+      <img src="./DressUpHub-IMG/shop1.png" alt="Shop-HeaderImage" />
+    </div>
+  </div>
+
+
+
+
+
+ <!-- SHOP HEADER ENDS  -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SHOPS PRODUCTS & CONTENT STARTS HERE -->
+
+
+
+
+
+
+
+
+
+
+  <div class="products-cards-container">
+    <!-- Product 1 -->
+    <div class="card">
+      <h2>Product 1</h2>
+      <div class="image-slider">
+        <img class="slider-image active" src="./slide1.jpg">
+        <img class="slider-image" src="./slide2.jpg">
+        <img class="slider-image" src="./slide4.jpg">
+        <div class="slider-navigation">
+          <button onclick="changeSlide('prev', 1)"><i class="fa fa-chevron-left"></i></button>
+          <button onclick="changeSlide('next', 1)"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="color-selector">
+        <input type="radio" name="color1" value="red"> Red
+        <input type="radio" name="color1" value="blue"> Blue
+        <input type="radio" name="color1" value="green"> Green
+      </div>
+      <div class="size-selector">
+        <input type="checkbox" name="size1" value="XS" required> XS
+        <input type="checkbox" name="size1" value="S"> S
+        <input type="checkbox" name="size1" value="M"> M
+        <input type="checkbox" name="size1" value="L"> L
+        <input type="checkbox" name="size1" value="XL"> XL
+      </div>
+      <p class="price">R49.99</p>
+      <button class="add-to-cart" onclick="addToCart('Product 1')">Add to Cart</button>
+      <p class="out-of-stock" style="display: none;">Out of Stock</p>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+      <h2>Product 2</h2>
+      <div class="image-slider">
+        <img class="slider-image active" src="./slide5.jpg">
+        <img class="slider-image" src="./slide6.jpg">
+        <img class="slider-image" src="./slide7.jpg">
+        <div class="slider-navigation">
+          <button onclick="changeSlide('prev', 2)"><i class="fa fa-chevron-left"></i></button>
+          <button onclick="changeSlide('next', 2)"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="color-selector">
+        <input type="radio" name="color2" value="red"> Red
+        <input type="radio" name="color2" value="blue"> Blue
+        <input type="radio" name="color2" value="green"> Green
+      </div>
+      <div class="size-selector">
+        <input type="checkbox" name="size2" value="XS"> XS
+        <input type="checkbox" name="size2" value="S"> S
+        <input type="checkbox" name="size2" value="M"> M
+        <input type="checkbox" name="size2" value="L"> L
+        <input type="checkbox" name="size2" value="XL"> XL
+      </div>
+      <p class="price">R29.99</p>
+      <button class="add-to-cart" onclick="addToCart('Product 2')">Add to Cart</button>
+      <p class="out-of-stock">Out of Stock</p>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+      <h2>Product 3</h2>
+      <div class="image-slider">
+        <img class="slider-image active" src="./slide8.jpg">
+        <img class="slider-image" src="./slide9.jpg">
+        <img class="slider-image" src="./slide1.jpg">
+        <div class="slider-navigation">
+          <button onclick="changeSlide('prev', 3)"><i class="fa fa-chevron-left"></i></button>
+          <button onclick="changeSlide('next', 3)"><i class="fa fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="color-selector">
+        <input type="radio" name="color3" value="red"> Red
+        <input type="radio" name="color3" value="blue"> Blue
+        <input type="radio" name="color3" value="green"> Green
+      </div>
+      <div class="size-selector">
+        <input type="checkbox" name="size3" value="XS"> XS
+        <input type="checkbox" name="size3" value="S"> S
+        <input type="checkbox" name="size3" value="M"> M
+        <input type="checkbox" name="size3" value="L"> L
+        <input type="checkbox" name="size3" value="XL"> XL
+      </div>
+      <p class="price">R39.99</p>
+      <button class="add-to-cart" onclick="addToCart('Product 3')">Add to Cart</button>
+      <p class="out-of-stock" style="display: none;">Out of Stock</p>
+    </div>
+  </div>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCartModal()">&times;</span>
+      <h2>Cart</h2>
+      <div id="cartItems"></div>
+      <div class="cart-buttons">
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="closeCartModal()">Continue Shopping</button>
+      </div>
+  
+      <div class="delivery-options">
+        <h2>Delivery Type</h2>
+        <select name="delivery-type">
+          <option value="usa">Door To Door</option>
+          <option value="canada">PEP/Shoprite</option>
+        </select>
+        <label>
+          <ul>
+            <li>Door to Door: Enter your Delivery Address</li>
+            <li>PEP/Shoprite: Enter Store Addresses for Delivery</li>
+          </ul>
+          Address: <br>
+          <textarea name="message" placeholder="Please Enter Your Address" rows="4" cols="50"></textarea>
+        </label>
+      </div>
+  
+      <div class="delivery-details">
+        <h2>Delivery Details</h2>
+        <form>
+          <label>
+            Name:
+            <input type="text" name="name">
+          </label>
+          <br>
+          <label>
+            Contact Number:
+            <input type="text" name="contactNumber">
+          </label>
+          <br>
+          <label>
+            Email:
+            <input type="email" name="email">
+          </label>
+          <br>
+          <br>
+          <button>Checkout</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SHOPS PRODUCTS & CONTENT ENDS HERE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FOOTER SECTION STARTS -->
+
+
+    <div class="content1">
+    </div>
+      <footer class="shop-footer" id="shop-footer">
+        <div class="main-content">
+          <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor sunt vero id nihil minus, recusandae velit necessitatibus ducimus iusto incidunt eum ipsam ratione sit odio. Soluta nobis, ex eveniet cum suscipit tempora nemo deleniti praesentium molestiae quia dignissimos. Necessitatibus perferendis ex accusantium mollitia magni provident laboriosam suscipit molestias quasi consequatur.</p>
+              <div class="social">
+                <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+                <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="center box">
+            <h2>CONTACT DETAILS</h2>
+            <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Braamfontein, Johannesburg, South Africa</span>
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+27 78 123 4567</span>
+              </div>
+              <div class="email">
+                <span class="fa-envelope-open"></span>
+                <span class="text">dressuphub@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="right box">
+            <h2>LINKS</h2>
+            <div class="content">
+              <form action="#">
+                <div class="LinkButton1">
+                  <p><a href="./" class="LinkButton">Go To Home</a></p>
+                </div>
+                <div class="LinkButton2">
+                  <p><a to="/" class="LinkButton">Track Your Order(s)</a></p>
+                </div>
+                <div class="LinkButton3">
+                  <p><a to="/" class="LinkButton">Sign up</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <center>
+            <span class="credit">Creatives SA</span>
+            <span class="fa-copyright"></span><span> | 2023 All rights reserved.</span>
+          </center>
+        </div>
+      </footer>
+
+ <!-- FOOTER SECTION ENDS  -->
+
+
+
+    </div>
+
+<script src="cart.js"></script>
+<script>
+
+
+
+
+
+
+  function addToCart(productName) {
+    // Retrieve the selected color and sizes
+    var color = document.querySelector('input[name="color' + productName.charAt(productName.length - 1) + '"]:checked').value;
+    var sizes = [];
+    var checkboxes = document.querySelectorAll('input[name="size' + productName.charAt(productName.length - 1) + '"]:checked');
+    for (var i = 0; i < checkboxes.length; i++) {
+      sizes.push(checkboxes[i].value);
+    }
+  
+    // Retrieve the price of the selected product
+    var price = document.querySelector('.card:nth-child(' + productName.charAt(productName.length - 1) + ') .price').innerText;
+  
+    // Retrieve the existing cart items from local storage
+    var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+    // Check if the product already exists in the cart
+    var existingProduct = cartItems.find(function(item) {
+      return item.productName === productName && item.color === color && item.sizes.toString() === sizes.toString();
+    });
+  
+    if (existingProduct) {
+      // If the product already exists, increment its quantity
+      existingProduct.quantity++;
+    } else {
+      // If the product does not exist, add it to the cart items
+      var product = {
+        productName: productName,
+        color: color,
+        sizes: sizes,
+        price: price,
+        quantity: 1
+      };
+      cartItems.push(product);
+    }
+  
+    // Store the updated cart items in local storage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  
+    // Update the cart count in the navbar
+    updateCartCount();
+  }
+  
+  // Function to update the cart count in the navbar
+  function updateCartCount() {
+    var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    var totalCount = 0;
+    for (var i = 0; i < cartItems.length; i++) {
+      var itemQuantity = parseInt(cartItems[i].quantity);
+      if (!isNaN(itemQuantity) && itemQuantity >= 1) {
+        totalCount += itemQuantity;
+      }
+    }
+    var cartCount = document.getElementById('cartCount');
+    cartCount.innerText = totalCount;
+  }
+  
+  // Function to open the cart modal
+  function openCartModal() {
+    // Retrieve the cart items from local storage
+    var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+    // Get the cart items element
+    var cartItemsElement = document.getElementById('cartItems');
+  
+    // Clear the existing cart items
+    cartItemsElement.innerHTML = '';
+  
+    // Populate the cart items
+    if (cartItems.length === 0) {
+      cartItemsElement.innerText = 'Your cart is empty.';
+    } else {
+      for (var i = 0; i < cartItems.length; i++) {
+        var item = document.createElement('div');
+  
+        var productName = document.createElement('p');
+        productName.innerText = cartItems[i].productName;
+        item.appendChild(productName);
+  
+        var quantity = document.createElement('input');
+        quantity.type = 'number';
+        quantity.min = '1';
+        quantity.value = cartItems[i].quantity;
+        quantity.dataset.index = i;
+        quantity.addEventListener('change', updateQuantity);
+        item.appendChild(quantity);
+  
+        var details = document.createElement('p');
+        details.innerText =
+          'Color: ' + cartItems[i].color +
+          ' - Sizes: ' + cartItems[i].sizes.join(', ') +
+          ' - Price: ' + cartItems[i].price;
+        item.appendChild(details);
+  
+        cartItemsElement.appendChild(item);
+      }
+    }
+  
+    // Display the cart modal
+    var modal = document.getElementById('cartModal');
+    modal.style.display = 'block';
+  }
+  
+  // Function to update the quantity when it changes
+  function updateQuantity(event) {
+    var index = parseInt(event.target.dataset.index);
+    var quantity = parseInt(event.target.value);
+  
+    // Check if the quantity is a valid number
+    if (!isNaN(quantity) && quantity >= 1) {
+      // Retrieve the cart items from local storage
+      var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+      // Update the quantity for the corresponding product in the cart
+      if (index >= 0 && index < cartItems.length) {
+        cartItems[index].quantity = quantity;
+  
+        // Store the updated cart items in local storage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  
+        // Update the cart count in the navbar
+        updateCartCount();
+      }
+    }
+  }
+  
+  // Function to close the cart modal
+  function closeCartModal() {
+    var modal = document.getElementById('cartModal');
+    modal.style.display = 'none';
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      // Function to change the active slide in the image slider
+      function changeSlide(direction, productIndex) {
+        var sliderImages = document.querySelectorAll('.card:nth-child(' + productIndex + ') .slider-image');
+        var activeSlideIndex = 0;
+        for (var i = 0; i < sliderImages.length; i++) {
+          if (sliderImages[i].classList.contains('active')) {
+            activeSlideIndex = i;
+            break;
+          }
+        }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        // Remove the active class from the current slide
+        sliderImages[activeSlideIndex].classList.remove('active');
+  
+        // Calculate the index of the next slide based on the direction
+        var nextSlideIndex;
+        if (direction === 'prev') {
+          nextSlideIndex = (activeSlideIndex - 1 + sliderImages.length) % sliderImages.length;
+        } else {
+          nextSlideIndex = (activeSlideIndex + 1) % sliderImages.length;
+        }
+  
+        // Add the active class to the next slide
+        sliderImages[nextSlideIndex].classList.add('active');
+      }
+  
+  
+  
+  // Function to clear the cart
+  function clearCart() {
+    // Clear the cart items in local storage
+    localStorage.removeItem('cartItems');
+    
+    // Update the cart count in the navbar
+    var cartCount = document.getElementById('cartCount');
+    cartCount.innerText = '0';
+  
+    // Get the cart items element
+    var cartItemsElement = document.getElementById('cartItems');
+  
+    // Clear the existing cart items
+    cartItemsElement.innerHTML = 'Your cart is empty.';
+  }
+  
+  
+      
+    </script>
+</body>
+
+</html>
